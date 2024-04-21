@@ -1,0 +1,9 @@
+.ui-table{
+  @apply table table-zebra;
+  .column{
+    @apply relative;
+  }
+  &__container{
+    @apply overflow-x-auto;
+  }
+}

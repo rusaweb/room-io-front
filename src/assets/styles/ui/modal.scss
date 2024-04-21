@@ -1,0 +1,21 @@
+.modal{
+  @apply fixed top-0 left-0 h-screen w-full flex items-center justify-center;
+  &__body{
+    @apply bg-white dark:bg-gray-800 relative rounded-xl p-5 shadow-lg flex flex-col text-lg max-w-7xl min-w-96 text-gray-800;
+  }
+  &__head{
+    @apply text-2xl font-bold text-center dark:text-white
+  }
+  &__content{
+
+  }
+  &__footer{
+    @apply flex gap-2 self-end
+  }
+  &__wrapper{
+    @apply bg-black/[.3] w-full absolute h-full;
+  }
+}
+:root:has(:is(.modal-open, .modal:target, .modal-toggle:checked + .modal, .modal[open])){
+  scrollbar-gutter: inherit;
+}
